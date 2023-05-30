@@ -1,0 +1,413 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+.color-grey {
+  color: #828282;
+}
+
+.color-orange {
+  color: #F58634;
+}
+
+.cta-button {
+  padding: 19px 43px;
+  color: #fff;
+  background: #F58634;
+}
+
+.review__headline,
+.blog__headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.review__label-main,
+.blog__label-main {
+  margin: 0 56px 0 0;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
+  width: 55%;
+}
+
+.review__label-view,
+.blog__label-view {
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.nav {
+  padding: 48px 0;
+  margin-bottom: 50px;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  margin-left: auto;
+}
+
+.menu__item--active {
+  color: #000;
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero__headline {
+  width: 650px;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.hero__headline-sub {
+  width: 375px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.hero__headline-sub::before {
+  align-items: center;
+  content: "";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 15px;
+  left: -60px;
+  background-color: #F58634;
+  color: #ffffff;
+  height: 3px;
+  width: 38px;
+}
+
+.hero__image {
+  /* display: block;
+  margin-left: auto; */
+  width: 91%;
+  background-size: cover;
+}
+
+.hero__search {
+  display: flex;
+  position: relative;
+  top: -48px;
+  width: fit-content;
+  margin-left: auto;
+  margin-bottom: 84px;
+  padding: 16px 16px 16px 40px;
+  align-items: center;
+  gap: 64px;
+  background-color: #fff;
+  box-shadow: 0px 12px 45px rgba(86, 86, 86, 0.1);
+}
+
+.hero__search-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__search-dropdown {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero__search-dropdown::after {
+  content: url(/images/drop-down.svg);
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.hero__search-button {
+  margin-left: 48px;
+}
+
+.sale__headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.sale__label-main {
+  margin: 0 56px 0 0;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.sale__label-sub {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.sale__label-sub:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+.sale__label-view {
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.sale__houses {
+  display: flex;
+  margin-bottom: 128px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sale__house {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sale__image-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.sale__image-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  margin-left: auto;
+}
+
+.sale__image-label {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.sale__house-name {
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.sale__house-description {
+  margin-bottom: 16px;
+}
+
+.sale__house-price {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.review__posts {
+  margin-bottom: 128px;
+}
+
+.review__post {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__image-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+  flex-direction: column;
+}
+
+.review__image-label {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.review__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.blog__posts {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 128px;
+}
+
+.blog__post-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.blog__image-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 24px;
+  flex-direction: column;
+}
+
+.blog__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.blog__user-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.blog__user-name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.blog__user-title {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.blog__post-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.blog__post-subs {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  flex: 1;
+}
+
+.blog__post-sub {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.blog__post-sub-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.blog__post-sub-image {
+  flex: 1;
+}
+
+.blog__post-sub-title {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.subscribe {
+  position: relative;
+  padding: 72px 0;
+  background-color: #F58634;
+  margin-bottom: 128px;
+}
+
+.subscribe__headline {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 75px;
+  text-align: center;
+  color: #fff;
+}
+
+.subscribe__custom-search {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe__input {
+  width: 100%;
+  padding: 40px 0px 40px 32px;
+  border: none;
+}
+
+.subscribe__button {
+  top: 16px;
+  bottom: 16px;
+  right: -16px;
+  position: absolute;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.footer__sign {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.footer__icons a {
+  margin-left: 18px;
+}
